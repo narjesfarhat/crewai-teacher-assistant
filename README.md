@@ -1,4 +1,4 @@
-📚 Teacher CrewAI  Multi-Agent AI Teaching Assistant (Local Qwen Model)
+📚 Teacher CrewAI — Multi-Agent AI Teaching Assistant (Local Qwen Model)
 A fully local AI-powered teaching assistant built with CrewAI, Python, and Ollama.
 This project uses a team of specialized AI agents to transform lesson notes into professional classroom materials such as lesson plans, quizzes, and teaching strategies.
 It runs entirely on your machine using local language models like Qwen2.5 or Llama, with no API keys, no cloud dependency, and full privacy.
