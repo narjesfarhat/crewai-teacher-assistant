@@ -1,239 +1,355 @@
-📚 Teacher CrewAI — Multi-Agent AI Teaching Assistant (Local Qwen Model)
+📚 Teacher CrewAI — Multi-Agent AI Teaching Assistant
+A professional AI-powered teaching assistant built with CrewAI, Python, and Ollama.
+This project uses multiple specialized AI agents to transform raw lesson notes into complete classroom-ready teaching materials.
+Provide your notes manually or from a .txt file, and the system will automatically generate:
 
-A fully local AI-powered teaching assistant built with CrewAI, Python, and Ollama.
-This project uses a team of specialized AI agents to transform lesson notes into professional classroom materials such as lesson plans, quizzes, and teaching strategies.
 
-It runs entirely on your machine using local language models like Qwen2.5 or Llama, with no API keys, no cloud dependency, and full privacy.
+📘 Structured lesson plans
 
-Perfect for:
+
+📝 Student quizzes with answer keys
+
+
+🎓 Teaching strategies and pedagogy guidance
+
+
+Built to run 100% locally using Ollama models such as Qwen2.5 or Llama, with no API keys, no cloud dependency, and full privacy.
+
+🚀 Why This Project?
+Teachers spend hours preparing lessons, assessments, and teaching strategies.
+This project automates that workflow using coordinated AI agents, helping educators save time while improving lesson quality.
+Ideal for:
+
 
 Teachers
+
+
 Tutors
+
+
 Trainers
+
+
 Homeschool educators
-Students creating study material
-Anyone exploring AI multi-agent systems
-🚀 Features
-✅ 100% Local AI
 
-Runs offline using Ollama with models such as:
 
-Qwen2.5 (recommended)
-Llama 3
-Other Ollama-supported models
-✅ No API Keys Required
+Students creating study resources
 
-No OpenAI key, no subscriptions, no hidden costs.
 
-✅ Multi-Agent Collaboration
+Developers learning multi-agent AI systems
 
-Three expert AI agents work together:
 
-Agent	Role
-📘 Curriculum Designer	Builds a professional lesson plan
-📝 Quiz Creator	Generates quizzes with answer keys
-🎓 Pedagogy Advisor	Gives expert teaching strategies
-✅ Flexible Input Options
 
-Choose how to provide lesson notes:
+✨ Key Features
+✅ Multi-Agent AI Workflow
+Three expert agents collaborate sequentially:
+AgentResponsibility📘 Curriculum DesignerConverts notes into structured lesson plans📝 Quiz CreatorBuilds formative and summative assessments🎓 Pedagogy AdvisorRecommends teaching methods and engagement strategies
 
-Paste notes directly into terminal
-Load notes from .txt file
-Use built-in example lessons
-✅ Supports Any Subject
+✅ Flexible Input Methods
+Choose one of the following:
 
-Use it for:
+
+Paste lesson notes directly into terminal
+
+
+Load lesson notes from a .txt file
+
+
+Use built-in demo lessons
+
+
+
+✅ Works Across Subjects
+Supports virtually any topic:
+
 
 Mathematics
-English
+
+
+English Literature
+
+
 Science
-Music
+
+
 History
+
+
+Geography
+
+
+Music
+
+
 Languages
+
+
 Business
-Coding
-University subjects
-Corporate training
+
+
+Programming
+
+
+University courses
+
+
+
+✅ Runs Fully Local
+Powered by Ollama.
+Benefits:
+
+
+No API fees
+
+
+No rate limits
+
+
+No external data sharing
+
+
+Fast local inference
+
+
+Full ownership of workflow
+
+
+
 🧠 Tech Stack
-Python 3.10 – 3.12
-CrewAI 1.9.x
-crewai-tools
-Ollama
-Qwen2.5 / Llama
+TechnologyPurposePython 3.10+Core programming languageCrewAI 1.9.xMulti-agent orchestrationOllamaLocal LLM runtimeQwen2.5 / LlamaLanguage modelspathlib / CLIFile loading & user interaction
+
 📦 Installation
-1️⃣ Clone Repository
-git clone https://github.com/YOUR_USERNAME/teacher-crewai-assistant.git
-cd teacher-crewai-assistant
-2️⃣ Create Virtual Environment
+1. Clone Repository
+git clone https://github.com/YOUR_USERNAME/teacher-crewai-assistant.gitcd teacher-crewai-assistant
+
+2. Create Virtual Environment
 Windows
-python -m venv venv
-venv\Scripts\activate
+python -m venv venvvenv\Scripts\activate
 macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
-3️⃣ Install Requirements
+python3 -m venv venvsource venv/bin/activate
+
+3. Install Dependencies
 pip install -r requirements.txt
+
 🤖 Install Ollama
-
 Download Ollama:
-
 👉 https://ollama.com/download
 
-📥 Download Local Model
-
+📥 Download a Model
 Recommended:
-
 ollama pull qwen2.5
-
 Alternative:
-
 ollama pull llama3
+
 ▶️ Start Ollama
 ollama serve
+
 ⚙️ Configure Model
-
 Inside teacher_crew.py
-
 LLM_MODEL = "ollama/qwen2.5:3b"
-
-To see installed models:
-
+To list installed models:
 ollama list
-▶️ Run Project
+
+▶️ Run the Application
 python teacher_crew.py
-💬 How It Works
 
-When the program starts, choose:
-
-1. Paste lesson notes directly
-2. Load notes from .txt file
-3. Use built-in example
-
+💬 User Workflow
+When launched, choose:
+1. Paste notes directly2. Load notes from .txt file3. Use built-in example
 Then enter:
 
+
 Subject
-Grade / Level
-Notes content
 
-The AI crew will begin working.
 
-📄 What The Crew Generates
-📘 1. Complete Lesson Plan
+Grade / Education level
 
+
+Lesson notes
+
+
+The AI crew processes everything automatically.
+
+📄 Output Generated
+📘 Lesson Plan
 Includes:
 
+
 Lesson title
+
+
 Learning objectives
+
+
 Materials needed
-Class timeline
+
+
+Time breakdown
+
+
 Activities
+
+
 Summary
-Homework ideas
-📝 2. Student Quizzes
 
-Creates two quiz types:
 
+Homework suggestions
+
+
+
+📝 Assessments
 Formative Quiz
-
-Short in-class assessment.
-
+Short in-class check for understanding.
 Summative Quiz
+Comprehensive end-of-lesson quiz containing:
 
-Longer final assessment with:
 
-Multiple Choice
+Multiple choice
+
+
 True / False
-Fill in the Blank
-Short Answer
 
-Includes full answer keys.
 
-🎓 3. Teaching Advice
+Fill in the blank
 
-Practical teaching guidance:
 
-Common misconceptions
-Best teaching methods
+Short answer
+
+
+Includes answer keys and explanations.
+
+🎓 Teaching Guidance
+Includes:
+
+
+Common student misconceptions
+
+
+Best methods to teach the topic
+
+
 Differentiation strategies
-Student engagement ideas
+
+
+Classroom engagement ideas
+
+
 Mistakes to avoid
-Real-time assessment ideas
+
+
+Real-time assessment methods
+
+
+
 📌 Example Use Cases
 Mathematics
 
-Input notes on:
+
+Algebra
+
+
+Geometry
+
 
 Quadratic Equations
-Algebra
-Geometry
+
+
 Calculus
+
+
 English
 
-Input notes on:
 
 Poetry
+
+
 Grammar
-Writing Skills
+
+
+Essay Writing
+
+
 Figurative Language
+
+
 Science
 
-Input notes on:
 
 Biology
+
+
 Chemistry
+
+
 Physics
+
+
 Music
 
-Input notes on:
 
 Rhythm
-Chords
+
+
 Theory
+
+
 Instruments
+
+
+Harmony
+
+
+
 📁 Project Structure
-teacher-crewai-assistant/
-│── teacher_crew.py
-│── requirements.txt
-│── README.md
-│── teacher_output.txt
-📝 Notes
-Fully offline after model installation
-No internet needed during use
-Easy to customize agents
-Great for educators and students
-Supports all education levels
-🔮 Future Enhancements
+teacher-crewai-assistant/│── teacher_crew.py│── requirements.txt│── README.md│── teacher_output.txt
 
-Planned upgrades:
+🔮 Roadmap
+Future improvements:
 
-PDF worksheet export
-PowerPoint lesson slides
-Gradio / Streamlit UI
-Voice teaching assistant
+
+Web UI (Gradio / Streamlit)
+
+
+PDF lesson exports
+
+
+PowerPoint slide generation
+
+
 Homework generator
-Auto grading system
+
+
+Auto grading assistant
+
+
+Voice teacher assistant
+
+
 Multi-language support
+
+
+
 🤝 Contributing
-
 Contributions are welcome.
+1. Fork repository2. Create feature branch3. Commit improvements4. Open pull request
 
-Fork repository
-Create feature branch
-Improve project
-Submit pull request
 💛 Author
-
 Narjes
 AI Enthusiast • SEO Analyst • Multi-Agent Systems Learner
 
 ⭐ Support
+If you found this useful:
 
-If this project helped you:
 
-⭐ Star the repository
-🔁 Share it
-🚀 Build your own version
+Star the repository ⭐
+
+
+Share with educators
+
+
+Build your own version
+
+
 
 📜 License
-
-MIT License
+Released under the MIT License.
